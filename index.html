@@ -84,183 +84,210 @@
     background: linear-gradient(135deg, #600016 0%, #870825 100%);
   }
   .glass-nav {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(20px);
-  }
-  /* WhatsApp SVG icon */
-  .whatsapp-icon {
-    width: 30px;
-    height: 30px;
-    fill: white;
   }
 </style>
 </head>
 <body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
 
-<!-- TopNavBar -->
+<!-- ===== TOP NAV ===== -->
 <nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
-  <div class="flex justify-between items-center px-6 md:px-12 py-4 w-full max-w-screen-2xl mx-auto">
-    <div class="text-xl font-headline italic text-primary">Dr. René Herrera</div>
-    <div class="hidden md:flex items-center space-gap-8 gap-8">
+  <div class="flex justify-between items-center px-5 md:px-12 py-4 w-full max-w-screen-2xl mx-auto">
+    <div class="text-lg md:text-xl font-headline italic text-primary">Dr. René Herrera</div>
+
+    <!-- Desktop: solo 2 links -->
+    <div class="hidden md:flex items-center gap-8">
       <a class="text-primary font-semibold border-b-2 border-secondary/50 font-label text-xs tracking-wide uppercase" href="#areas">Áreas de Práctica</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label text-xs tracking-wide uppercase" href="#resultados">Casos Destacados</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label text-xs tracking-wide uppercase" href="#estudio">El Estudio</a>
       <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label text-xs tracking-wide uppercase" href="#asesoramiento">Asesoramiento Legal</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label text-xs tracking-wide uppercase" href="#contacto">Contacto</a>
     </div>
-    <a href="tel:+5491151503610" class="bg-primary text-on-primary px-5 py-2 text-xs font-label tracking-widest uppercase hover:bg-primary-container transition-all">Defensa Urgente</a>
+
+    <!-- Defensa Urgente: mensaje directo WA -->
+    <a href="https://wa.me/5491151503610?text=Hola%20hablo%20del%20sitio%20web%20por%20una%20urgencia"
+       target="_blank"
+       class="bg-primary text-on-primary px-4 md:px-5 py-2 text-xs font-label tracking-widest uppercase hover:bg-primary-container transition-all flex items-center gap-2">
+      <svg class="w-4 h-4 fill-white flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Defensa Urgente
+    </a>
   </div>
 </nav>
 
-<main class="pt-20">
+<main class="pt-16 md:pt-20">
 
-  <!-- Hero Section -->
-  <section id="estudio" class="relative min-h-[921px] flex items-center overflow-hidden bg-burgundy-depth">
-    <div class="absolute inset-0 opacity-20">
-      <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMG-7FB-QrphpW5boRNo17JMPoIGnPzShECzF9oh1q8UFqDFcwSQ85pEAW-br4mk76ZAAvfF0ito4TlVfNG3ewgmitVGPzk0zHL87gg_Xnj8uWvJFlSZ6dH1m8Ixega7RQo2T_qduc56U13Oad_vC_Y-ZtKvpoWLKGYF3iNkK3-D3RvWjNWjlmO5cfa7zUstyzOFXRlGIq9ZZFwrn2bYUcv1c3y7zAQ5IwhCSH1ntFSGjPepcqjrh1_2QU5dR80RefWlxnwCQs-uT-" alt="Balanza de la justicia en escritorio de caoba"/>
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="relative overflow-hidden bg-burgundy-depth" style="min-height: 100svh; display:flex; align-items:center;">
+    <!-- Background texture -->
+    <div class="absolute inset-0 opacity-15 pointer-events-none">
+      <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMG-7FB-QrphpW5boRNo17JMPoIGnPzShECzF9oh1q8UFqDFcwSQ85pEAW-br4mk76ZAAvfF0ito4TlVfNG3ewgmitVGPzk0zHL87gg_Xnj8uWvJFlSZ6dH1m8Ixega7RQo2T_qduc56U13Oad_vC_Y-ZtKvpoWLKGYF3iNkK3-D3RvWjNWjlmO5cfa7zUstyzOFXRlGIq9ZZFwrn2bYUcv1c3y7zAQ5IwhCSH1ntFSGjPepcqjrh1_2QU5dR80RefWlxnwCQs-uT-" alt=""/>
     </div>
-    <div class="container mx-auto px-6 md:px-12 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-      <div class="space-y-8">
-        <div class="inline-block px-4 py-1 border border-secondary text-secondary text-xs font-label tracking-widest uppercase">
-          Abogado Penalista · Buenos Aires
-        </div>
-        <h1 class="text-on-primary font-headline text-5xl md:text-8xl leading-tight">
-          Defensa Penal <br/><span class="italic text-secondary-fixed">de Élite</span>
-        </h1>
-        <p class="text-on-primary-container text-xl md:text-2xl font-headline italic max-w-lg">
-          "Su libertad no es una negociación.<br/>Es una batalla que se gana con estrategia."
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 pt-4">
-          <a href="#contacto" class="bg-secondary text-on-primary px-8 py-4 font-label uppercase tracking-widest text-sm hover:scale-105 transition-transform text-center">
-            Consultar Ahora
-          </a>
-          <a href="tel:+5491151503610" class="flex items-center gap-3 px-6 py-4 text-on-primary border border-on-primary/20 backdrop-blur-sm">
-            <span class="material-symbols-outlined text-secondary">phone_in_talk</span>
-            <span class="font-label text-lg">11 5150-3610</span>
-          </a>
-        </div>
-      </div>
-      <div class="hidden md:block relative">
-        <div class="aspect-[4/5] bg-surface-container-low overflow-hidden shadow-2xl relative flex items-center justify-center">
-          <!-- Monogram RH -->
-          <div class="flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-primary-container to-primary">
-            <div class="relative flex items-center justify-center">
-              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-64 h-64">
-                <circle cx="100" cy="100" r="95" fill="none" stroke="#ffdea5" stroke-width="2" opacity="0.6"/>
-                <circle cx="100" cy="100" r="85" fill="none" stroke="#ffdea5" stroke-width="1" opacity="0.3"/>
-                <path d="M55 55 L55 145 M55 55 L90 55 Q115 55 115 80 Q115 100 90 100 L55 100 M90 100 L115 145" stroke="#ffdea5" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M125 55 L125 145 M125 55 L165 55 M125 100 L165 100 M125 145 L165 145" stroke="#ffdea5" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <p class="text-secondary-fixed font-headline italic text-xl mt-2 tracking-widest">Dr. René Herrera</p>
-            <p class="text-on-primary-container font-label text-xs tracking-widest uppercase mt-1">Abogado Penalista</p>
+
+    <div class="container mx-auto px-6 md:px-12 relative z-10 w-full py-12 md:py-0">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+
+        <!-- Texto: abajo en mobile, izquierda en desktop -->
+        <div class="space-y-5 md:space-y-8 order-2 md:order-1">
+          <div class="inline-block px-3 py-1 border border-secondary text-secondary text-xs font-label tracking-widest uppercase">
+            Abogado Penalista · Buenos Aires
+          </div>
+          <h1 class="text-on-primary font-headline leading-[1.1]" style="font-size: clamp(2.8rem, 9vw, 6.5rem);">
+            Defensa Penal<br/><span class="italic text-secondary-fixed">de Élite</span>
+          </h1>
+          <p class="text-on-primary-container text-base md:text-2xl font-headline italic" style="max-width:32rem;">
+            "Su libertad no es una negociación.<br/>Es una batalla que se gana con estrategia."
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 pt-1">
+            <a href="#formulario"
+               class="bg-secondary text-on-primary px-8 py-4 font-label uppercase tracking-widest text-sm hover:scale-105 transition-transform text-center">
+              Consultar Ahora
+            </a>
+            <a href="tel:+5491151503610" class="flex items-center gap-3 px-6 py-4 text-on-primary border border-on-primary/30 backdrop-blur-sm">
+              <span class="material-symbols-outlined text-secondary">phone_in_talk</span>
+              <span class="font-label text-lg">11 5150-3610</span>
+            </a>
           </div>
         </div>
+
+        <!-- Foto persona posando: arriba en mobile, derecha en desktop -->
+        <div class="order-1 md:order-2 flex justify-center md:justify-end">
+          <div class="relative overflow-hidden shadow-2xl w-56 h-72 sm:w-72 sm:h-96 md:w-full md:h-auto md:max-h-[580px]" style="aspect-ratio: 4/5 !important;">
+            <img
+  class="w-full h-full object-cover object-top"
+  src="https://copilot.microsoft.com/th/id/BCO.e8e5ef87-791d-4688-a7fc-43fb5518c064.png"
+  alt="Dr. René Herrera, Abogado Penalista"
+/>
+
+            <!-- Degradado inferior -->
+            <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-primary/90 to-transparent"></div>
+            <!-- Nombre sobre foto -->
+            <div class="absolute bottom-3 left-4 right-4">
+              <p class="text-secondary-fixed font-headline italic text-base md:text-lg tracking-wide">Dr. René Herrera</p>
+              <p class="text-on-primary-container font-label text-xs tracking-widest uppercase">Abogado Penalista</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Practice Areas Section -->
-  <section id="areas" class="py-24 bg-surface-container-low">
+  <!-- ===== ÁREAS DE PRÁCTICA ===== -->
+  <section id="areas" class="py-16 md:py-24 bg-surface-container-low">
     <div class="container mx-auto px-6 md:px-12">
-      <div class="mb-16">
+      <div class="mb-10 md:mb-16">
         <p class="text-secondary font-label uppercase text-xs tracking-widest mb-3">Especialidades</p>
-        <h2 class="text-primary font-headline text-5xl">Áreas de <span class="italic text-secondary">Práctica</span></h2>
+        <h2 class="text-primary font-headline text-4xl md:text-5xl">Áreas de <span class="italic text-secondary">Práctica</span></h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-        <!-- Penal - destacado -->
-        <div class="md:col-span-2 md:row-span-2 bg-primary-container p-12 flex flex-col justify-between group overflow-hidden relative">
+      <!-- Grid principal -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Penal destacado -->
+        <div class="md:col-span-2 bg-primary-container p-8 md:p-12 flex flex-col justify-between group overflow-hidden relative" style="min-height:220px;">
           <div class="relative z-10">
-            <span class="text-secondary-fixed font-headline text-8xl opacity-30 block mb-4">01</span>
-            <h3 class="text-on-primary font-headline text-4xl mb-4">Derecho Penal</h3>
-            <p class="text-on-primary-container mb-8 max-w-sm">Defensa criminal estratégica en delitos complejos. Representación técnica de excelencia ante cualquier imputación penal.</p>
+            <span class="text-secondary-fixed font-headline text-6xl md:text-8xl opacity-30 block mb-3">01</span>
+            <h3 class="text-on-primary font-headline text-3xl md:text-4xl mb-3">Derecho Penal</h3>
+            <p class="text-on-primary-container mb-6 max-w-sm text-sm md:text-base">Defensa criminal estratégica en delitos complejos. Representación técnica de excelencia ante cualquier imputación penal.</p>
           </div>
-          <span class="material-symbols-outlined text-on-primary text-6xl self-end group-hover:rotate-12 transition-transform">gavel</span>
+          <span class="material-symbols-outlined text-on-primary text-5xl self-end group-hover:rotate-12 transition-transform">gavel</span>
         </div>
 
         <!-- Familia -->
-        <div class="bg-surface-container-high p-8 flex flex-col justify-between border-l-4 border-secondary">
+        <div class="bg-surface-container-high p-6 md:p-8 flex flex-col gap-2 border-l-4 border-secondary">
           <h3 class="text-primary font-headline text-2xl">Familia</h3>
           <p class="text-on-surface-variant text-sm">Divorcios, alimentos y régimen comunicacional.</p>
         </div>
 
         <!-- Civil -->
-        <div class="bg-surface-container-highest p-8 flex flex-col justify-between">
+        <div class="bg-surface-container-highest p-6 md:p-8 flex flex-col gap-2">
           <h3 class="text-primary font-headline text-2xl">Civil</h3>
           <p class="text-on-surface-variant text-sm">Contratos, daños y perjuicios.</p>
         </div>
 
         <!-- DNI -->
-        <div class="bg-surface-container-low p-8 flex flex-col justify-between border border-outline-variant">
+        <div class="bg-surface-container-low p-6 md:p-8 flex flex-col gap-2 border border-outline-variant">
           <h3 class="text-primary font-headline text-2xl">DNI</h3>
           <p class="text-on-surface-variant text-sm">Trámites de documentación nacional.</p>
         </div>
 
         <!-- Tierras -->
-        <div class="bg-surface-container-high p-8 flex flex-col justify-between border-r-4 border-secondary">
+        <div class="bg-surface-container-high p-6 md:p-8 flex flex-col gap-2 border-r-4 border-secondary">
           <h3 class="text-primary font-headline text-2xl">Tierras</h3>
           <p class="text-on-surface-variant text-sm">Juicios de escrituración, usucapión y posesión.</p>
         </div>
-
       </div>
 
       <!-- Fila adicional -->
       <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-        <!-- Migratorio -->
-        <div class="bg-surface-container p-8 flex items-center justify-between group">
-          <div class="flex items-center gap-6">
-            <span class="material-symbols-outlined text-secondary text-3xl">flight</span>
-            <div>
-              <h3 class="text-primary font-headline text-2xl">Migratorio</h3>
-              <p class="text-on-surface-variant text-sm">Residencias y trámites de radicación.</p>
-            </div>
+        <div class="bg-surface-container p-6 md:p-8 flex items-center gap-5">
+          <span class="material-symbols-outlined text-secondary text-3xl flex-shrink-0">flight</span>
+          <div>
+            <h3 class="text-primary font-headline text-2xl">Migratorio</h3>
+            <p class="text-on-surface-variant text-sm">Residencias y trámites de radicación.</p>
           </div>
         </div>
+        <div class="bg-surface-container p-6 md:p-8 flex items-center gap-5">
+          <span class="material-symbols-outlined text-secondary text-3xl flex-shrink-0">directions_car</span>
+          <div>
+            <h3 class="text-primary font-headline text-2xl">Tránsito</h3>
+            <p class="text-on-surface-variant text-sm">Accidentes y multas.</p>
+          </div>
+        </div>
+        <div class="bg-secondary p-6 md:p-8 flex items-center gap-5 text-on-primary">
+          <span class="material-symbols-outlined text-on-primary text-3xl flex-shrink-0">security</span>
+          <h3 class="font-headline text-2xl">Protección Legal Total</h3>
+        </div>
+      </div>
 
-        <!-- Tránsito -->
-        <div class="bg-surface-container p-8 flex items-center justify-between group">
-          <div class="flex items-center gap-6">
-            <span class="material-symbols-outlined text-secondary text-3xl">directions_car</span>
-            <div>
-              <h3 class="text-primary font-headline text-2xl">Tránsito</h3>
-              <p class="text-on-surface-variant text-sm">Accidentes y multas.</p>
-            </div>
+      <!-- ===== FORMULARIO DE CONSULTA ===== -->
+      <div id="formulario" class="mt-10 bg-surface-container-lowest shadow-2xl p-8 md:p-12 max-w-2xl mx-auto scroll-mt-24">
+        <p class="text-secondary font-label uppercase text-xs tracking-widest mb-2">Consulta gratuita</p>
+        <h3 class="text-primary font-headline text-3xl md:text-4xl mb-6">¿Necesita <span class="italic text-secondary">asesoramiento</span>?</h3>
+        <form id="form-consulta" class="space-y-5">
+          <div>
+            <label class="block text-primary font-label uppercase text-xs tracking-widest mb-2">Nombre Completo</label>
+            <input id="inp-nombre" class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-secondary p-4 transition-all" placeholder="Juan Pérez" type="text"/>
           </div>
-        </div>
-
-        <!-- Protección Total -->
-        <div class="bg-secondary p-8 flex items-center justify-between text-on-primary">
-          <div class="flex items-center gap-6">
-            <span class="material-symbols-outlined text-on-primary text-3xl">security</span>
-            <h3 class="font-headline text-2xl">Protección Legal Total</h3>
+          <div>
+            <label class="block text-primary font-label uppercase text-xs tracking-widest mb-2">Detalles del Caso</label>
+            <textarea id="inp-caso" class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-secondary p-4 transition-all" placeholder="Describa brevemente su situación jurídica..." rows="4"></textarea>
           </div>
-        </div>
+          <button type="button" onclick="enviarWhatsApp()"
+            class="w-full bg-primary text-on-primary py-4 px-8 font-label uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-primary-container transition-colors group">
+            Enviar Consulta por WhatsApp
+            <svg class="w-5 h-5 fill-white flex-shrink-0 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contacto" class="py-24 bg-surface-container-low relative overflow-hidden">
+  <!-- ===== DEFIENDA SUS DERECHOS + MAPA ===== -->
+  <section id="asesoramiento" class="py-16 md:py-24 bg-white relative overflow-hidden">
     <div class="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none">
       <span class="font-headline text-[20rem] leading-none absolute -right-20 -top-20">H</span>
     </div>
-    <div class="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 relative z-10">
+    <div class="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 md:gap-16 relative z-10">
+
+      <!-- Info + mapa -->
       <div>
-        <h2 class="text-primary font-headline text-5xl mb-8">Defienda <span class="italic text-secondary">sus derechos</span> hoy mismo</h2>
-        <p class="text-on-surface-variant text-lg mb-12 max-w-md">No permita que el tiempo juegue en su contra. Programe una consulta privada para evaluar su situación jurídica de manera exhaustiva.</p>
-        <div class="space-y-8">
+        <h2 class="text-primary font-headline text-4xl md:text-5xl mb-6">Defienda <span class="italic text-secondary">sus derechos</span> hoy mismo</h2>
+        <p class="text-on-surface-variant text-lg mb-8 max-w-md">No permita que el tiempo juegue en su contra. Programe una consulta privada para evaluar su situación jurídica de manera exhaustiva.</p>
+
+        <div class="space-y-6">
           <div class="flex items-start gap-4">
-            <div class="bg-primary p-3">
+            <div class="bg-primary p-3 flex-shrink-0">
               <span class="material-symbols-outlined text-on-primary">call</span>
             </div>
             <div>
               <p class="text-secondary font-label uppercase text-xs tracking-widest mb-1">Línea Directa 24/7</p>
-              <a href="tel:+5491151503610" class="text-primary font-headline text-3xl hover:text-secondary transition-colors">11 5150-3610</a>
+              <a href="tel:+5491151503610" class="text-primary font-headline text-2xl md:text-3xl hover:text-secondary transition-colors">11 5150-3610</a>
             </div>
           </div>
           <div class="flex items-start gap-4">
-            <div class="bg-secondary p-3">
+            <div class="bg-secondary p-3 flex-shrink-0">
               <span class="material-symbols-outlined text-on-primary">location_on</span>
             </div>
             <div>
@@ -270,13 +297,12 @@
           </div>
         </div>
 
-        <!-- Mapa interactivo -->
-        <div class="mt-10">
+        <!-- Mapa -->
+        <div class="mt-8">
           <p class="text-primary font-label uppercase text-xs tracking-widest mb-3">Cómo llegar</p>
-          <!-- Reemplazá el src del iframe con tu URL de Google Maps embed cuando tengas la ubicación exacta -->
-          <div class="w-full h-64 bg-surface-container-high border border-outline-variant overflow-hidden relative">
+          <div class="w-full overflow-hidden border border-outline-variant" style="height:240px;">
+            <!-- Reemplazá el src con tu enlace de Google Maps Embed -->
             <iframe
-              id="mapa-estudio"
               title="Ubicación del Estudio Jurídico Dr. René Herrera"
               width="100%"
               height="100%"
@@ -286,42 +312,40 @@
               referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104562.54578285537!2d-58.563139!3d-34.6036844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sar!4v1680000000000">
             </iframe>
-            <!-- Overlay aviso configuración -->
-            <div id="map-overlay" class="absolute inset-0 bg-primary/80 flex flex-col items-center justify-center text-on-primary p-4 text-center pointer-events-none">
-              <span class="material-symbols-outlined text-secondary text-4xl mb-2">edit_location</span>
-              <p class="font-label text-xs tracking-widest uppercase">Configurá la ubicación exacta reemplazando el src del iframe con tu enlace de Google Maps Embed</p>
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="bg-surface-container-lowest p-8 md:p-12 shadow-2xl">
-        <form id="form-consulta" class="space-y-6">
-          <div>
-            <label class="block text-primary font-label uppercase text-xs tracking-widest mb-2">Nombre Completo</label>
-            <input id="inp-nombre" class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-secondary p-4 transition-all" placeholder="Juan Pérez" type="text"/>
-          </div>
-          <div>
-            <label class="block text-primary font-label uppercase text-xs tracking-widest mb-2">Detalles del Caso</label>
-            <textarea id="inp-caso" class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-secondary p-4 transition-all" placeholder="Describa brevemente su situación jurídica..." rows="4"></textarea>
-          </div>
-          <button type="button" onclick="enviarWhatsApp()" class="w-full bg-primary text-on-primary py-5 px-8 font-label uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-primary-container transition-colors group">
-            Enviar Consulta por WhatsApp
-            <!-- WhatsApp icon SVG -->
-            <svg class="w-6 h-6 fill-current text-secondary-fixed group-hover:translate-x-2 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
-          </button>
-        </form>
+      <!-- Contacto rápido -->
+      <div class="bg-surface-container-lowest p-8 md:p-12 shadow-2xl flex flex-col justify-center gap-6">
+        <div>
+          <p class="text-secondary font-label uppercase text-xs tracking-widest mb-2">Contacto directo</p>
+          <h3 class="text-primary font-headline text-3xl mb-3">Hablemos <span class="italic">ahora</span></h3>
+          <p class="text-on-surface-variant text-sm">Cada hora cuenta en materia penal. No espere para obtener la asesoría que su situación requiere.</p>
+        </div>
+        <a href="https://wa.me/5491151503610?text=Hola%20Dr.%20Herrera%2C%20estoy%20comunic%C3%A1ndome%20por%20WhatsApp%20desde%20el%20sitio%20web."
+           target="_blank"
+           class="w-full bg-[#25D366] text-white py-4 px-8 font-label uppercase tracking-widest flex items-center justify-center gap-3 hover:opacity-90 transition-opacity">
+          <svg class="w-5 h-5 fill-white flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp Directo
+        </a>
+        <a href="tel:+5491151503610"
+           class="w-full bg-primary text-on-primary py-4 px-8 font-label uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-primary-container transition-colors">
+          <span class="material-symbols-outlined text-secondary-fixed">call</span>
+          Llamar Ahora
+        </a>
       </div>
+
     </div>
   </section>
 
 </main>
 
-<!-- Footer -->
-<footer class="w-full border-t border-stone-200 bg-surface-container-low">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<!-- ===== FOOTER ===== -->
+<footer class="w-full border-t border-stone-200 bg-surface-container-low" style="padding-bottom: env(safe-area-inset-bottom);">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-12 py-12 md:py-16 w-full max-w-screen-2xl mx-auto pb-24 md:pb-12">
     <div class="space-y-4">
       <div class="text-lg font-headline text-primary">Dr. René Herrera</div>
       <p class="text-on-surface-variant text-sm max-w-xs">Defensa técnica de excelencia en materia penal y civil. Compromiso inquebrantable con el éxito de nuestros clientes.</p>
@@ -343,29 +367,38 @@
   </div>
 </footer>
 
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-16 md:hidden bg-primary shadow-2xl z-50">
-  <a class="flex flex-col items-center justify-center text-on-primary-container p-2" href="tel:+5491151503610">
-    <span class="material-symbols-outlined">phone_in_talk</span>
-    <span class="font-label font-bold uppercase text-[10px]">Llamar</span>
+<!-- ===== BOTTOM NAV MOBILE ===== -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-stretch h-16 md:hidden bg-primary shadow-2xl z-50">
+  <!-- Llamar -->
+  <a class="flex flex-col items-center justify-center text-on-primary-container gap-0.5 flex-1 px-2"
+     href="tel:+5491151503610">
+    <span class="material-symbols-outlined" style="font-size:20px;">phone_in_talk</span>
+    <span class="font-label font-bold uppercase text-[9px] tracking-wide">Llamar</span>
   </a>
-  <a class="flex flex-col items-center justify-center bg-primary-container text-on-primary p-2 h-full w-full" href="https://wa.me/5491151503610" target="_blank">
-    <svg class="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+
+  <!-- Consulta → formulario -->
+  <a class="flex flex-col items-center justify-center bg-primary-container text-on-primary gap-0.5 flex-1 px-2"
+     href="#formulario">
+    <svg class="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
-    <span class="font-label font-bold uppercase text-[10px]">WhatsApp</span>
+    <span class="font-label font-bold uppercase text-[9px] tracking-wide">Consulta</span>
   </a>
-  <a class="flex flex-col items-center justify-center text-on-primary-container p-2" href="#contacto">
-    <span class="material-symbols-outlined">location_on</span>
-    <span class="font-label font-bold uppercase text-[10px]">Ubicación</span>
+
+  <!-- Ubicación -->
+  <a class="flex flex-col items-center justify-center text-on-primary-container gap-0.5 flex-1 px-2"
+     href="#asesoramiento">
+    <span class="material-symbols-outlined" style="font-size:20px;">location_on</span>
+    <span class="font-label font-bold uppercase text-[9px] tracking-wide">Ubicación</span>
   </a>
 </nav>
 
-<!-- Floating WhatsApp Button -->
-<a class="fixed bottom-20 right-6 md:bottom-8 md:right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-40 hover:scale-110 transition-transform flex items-center justify-center group"
-   href="https://wa.me/5491151503610?text=Hola%20Dr.%20Herrera%2C%20quisiera%20consultar%20sobre%20un%20caso."
-   target="_blank">
-  <svg class="w-8 h-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<!-- ===== FLOATING WHATSAPP ===== -->
+<a class="fixed bottom-20 right-4 md:bottom-8 md:right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-40 hover:scale-110 transition-transform flex items-center justify-center group"
+   href="https://wa.me/5491151503610?text=Hola%20Dr.%20Herrera%2C%20estoy%20comunic%C3%A1ndome%20por%20WhatsApp%20desde%20el%20sitio%20web."
+   target="_blank"
+   aria-label="Contactar por WhatsApp">
+  <svg class="w-7 h-7 fill-white flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </svg>
   <span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-3 transition-all duration-300 font-label uppercase text-xs tracking-widest whitespace-nowrap">WhatsApp Directo</span>
@@ -374,18 +407,16 @@
 <script>
   function enviarWhatsApp() {
     const nombre = document.getElementById('inp-nombre').value.trim();
-    const caso = document.getElementById('inp-caso').value.trim();
+    const caso   = document.getElementById('inp-caso').value.trim();
     const numero = '5491151503610';
-    let mensaje = 'Hola Dr. Herrera, quisiera una consulta.';
+    let mensaje;
     if (nombre || caso) {
-      mensaje = `Hola Dr. Herrera, mi nombre es ${nombre || '(sin nombre)'}. Mi consulta es: ${caso || '(sin detalle)'}`;
+      mensaje = `Hola Dr. Herrera, me comunico desde el sitio web. Mi nombre es ${nombre || '(sin nombre)'}. Mi consulta es: ${caso || '(sin detalle)'}`;
+    } else {
+      mensaje = 'Hola Dr. Herrera, me comunico desde el sitio web y quisiera una consulta.';
     }
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, '_blank');
   }
-
-  // Ocultar overlay del mapa al hacer clic (para que el usuario vea el mapa real)
-  document.getElementById('map-overlay').style.display = 'none';
-  // Nota: si queres mostrar el aviso de configuración, comenta la línea de arriba
 </script>
 
 </body>

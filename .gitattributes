@@ -1,0 +1,17 @@
+# Forzar LF en todos los archivos de texto (ideal para hosting Linux)
+* text=auto eol=lf
+
+# Archivos específicos
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+
+# Archivos binarios (no tocar saltos de línea)
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
